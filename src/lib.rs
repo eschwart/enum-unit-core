@@ -1,4 +1,4 @@
-// make this publicly accessible???
+/// Prefix used to name unnamed struct fields.
 pub const fn prefix() -> &'static str {
     "F"
 }

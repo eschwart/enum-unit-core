@@ -1,8 +1,12 @@
 [package]
 name = "enum-unit-core"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 license = "MIT"
 repository = "https://github.com/splurf/enum-unit-core"
 authors = ["Evan Schwartzentruber <evandotschwartzentruber@gmail.com>"]
 description = "Context for enum-unit."
+
+[profile.release]
+lto = true
+codegen-units = 1
